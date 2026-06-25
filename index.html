@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>charity: water - Water Drop Game</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Confetti Library for LevelUp -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>Water Drop</h1>
+            <div class="stats">
+                <p>Score: <span id="score">0</span></p>
+                <p>Time: <span id="time">30</span>s</p>
+            </div>
+            <div class="controls">
+                <button id="start-btn">Start Game</button>
+                <button id="reset-btn">Reset</button>
+            </div>
+            <p id="feedback-msg">Collect clean drops. Avoid dirty water!</p>
+        </header>
+        
+        <!-- The area where drops fall -->
+        <div id="play-area"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
